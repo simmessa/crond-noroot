@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+    cron:
+        image: crond-noroot
+        volumes:
+            - ./tasks:/opt/crontabs/tasks
+            - ./config.ini:/opt/config/config.ini
+

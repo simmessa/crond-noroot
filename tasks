@@ -1,0 +1,6 @@
+#CLEANING TASK
+SHELL=/bin/bash
+#### true | false 
+EMAIL_NOTIFICACION=false
+#dia(*) hora(*) dia_del_mes(*) mes(*) dia_semana(*) id_usuario(1001) commando(sleep 5 && id >> /tmp/test-1)
+*/1 * * * * 1001 bash -c "echo DING && id >> /tmp/test-1"
